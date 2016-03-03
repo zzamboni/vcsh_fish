@@ -1,0 +1,1 @@
+/Users/a10022/Personal/devel/fish-shell/share/completions/vagrant.fish
