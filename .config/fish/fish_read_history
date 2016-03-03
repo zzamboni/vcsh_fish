@@ -1,0 +1,30 @@
+- cmd: yes
+  when: 1413320127
+- cmd: no
+  when: 1413320358
+- cmd: function set_proxy\nif grep -q '^domain.*corproot.net' /etc/resolv.conf \nset_swisscom_proxy\nelse\nunset_swisscom_proxy\nend\nend
+  when: 1439798933
+  paths:
+    - /etc/resolv.conf
+- cmd: function fish_prompt\nset -l cyan (set_color -o cyan)\nset -l yellow (set_color -o yellow)\nset -l red (set_color -o red)\nset -l blue (set_color -o blue)\nset -l normal (set_color normal)\n\nset -l arrow "$blue➜ "\nset -l cwd (set_color $fish_color_cwd)(prompt_pwd)\n\nswitch $FISH_VERSION\ncase "2.2*"\nhistory --merge\nend\n\nif [ (_git_branch_name) ]\nset -l git_branch $red(_git_branch_name)\nset git_info "$blue git:($git_branch$blue)"\n\nif [ (_is_git_dirty) ]\nset -l dirty "$yellow ✗"\nset git_dirty "$dirty"\nend\nend\n\nif [ (_drush_alias_name) ]\nset -l drush_alias $blue(_drush_alias_name)\nset drush_info "$green drush:($drush_alias$green)"\nend\nset_proxy\necho -n -s (whoami)"@"(hostname -s)$arrow $cwd $git_info $drush_info $git_dirty $normal ' '\nend
+  when: 1439799120
+- cmd: function set_swisscom_proxy\nset -Ux http_proxy http://proxy.corproot.net:8079/\nset -Ux https_proxy http://proxy.corproot.net:8079/\nend
+  when: 1439801168
+- cmd: function fish_prompt\nset -l cyan (set_color -o cyan)\nset -l yellow (set_color -o yellow)\nset -l red (set_color -o red)\nset -l blue (set_color -o blue)\nset -l normal (set_color normal)\n\nset -l arrow "$blue➜ "\nset -l cwd (set_color $fish_color_cwd)(prompt_pwd)\n\nswitch $FISH_VERSION\ncase "2.2*"\nhistory --merge\nend\n\nif [ (_git_branch_name) ]\nset -l git_branch $red(_git_branch_name)\nset git_info "$blue git:($git_branch$blue)"\n\nif [ (_is_git_dirty) ]\nset -l dirty "$yellow ✗"\nset git_dirty "$dirty"\nend\nend\nset_proxy\nif [ (_drush_alias_name) ]\nset -l drush_alias $blue(_drush_alias_name)\nset drush_info "$green drush:($drush_alias$green)"\nend\n\necho -n -s (whoami)"@"(hostname -s)$arrow $cwd $git_info $drush_info $git_dirty $normal ' '\nend
+  when: 1439804035
+- cmd: djfkdfjdk
+  when: 1441285575
+- cmd: http://pulp.mgmt.sccloudpoc.net/pulp/repos/logstash-1.4/logstash-1.4.5-1_a2bacae.noarch.rpm
+  when: 1441285729
+- cmd: http://pulp.mgmt.sccloudpoc.net/pulp/repos/logstash-1.4/logstash-contrib-1.4.5-1_2bad350.noarch.rpm
+  when: 1441285747
+- cmd: http://pulp.mgmt.sccloudpoc.net/pulp/repos/sccloud-mgmt-infra-el7-dev/python-pika-0.9.14-1.1.el7.centos.noarch.rpm
+  when: 1441285773
+- cmd: http://pulp.mgmt.sccloudpoc.net/pulp/repos/sccloud-mgmt-infra-el7-dev/chaosheidi-server-0.0.1-1.2.el7.centos.x86_64.rpm
+  when: 1441285787
+- cmd: http://pulp.mgmt.sccloudpoc.net/pulp/repos/sccloud-mgmt-infra-el7-dev/consul-0.5.2-1.8.el7.centos.x86_64.rpm
+  when: 1441285804
+- cmd: http://pulp.mgmt.sccloudpoc.net/pulp/repos/sccloud-mgmt-infra-el7-dev/consul-ui-0.5.2-1.8.el7.centos.x86_64.rpm
+  when: 1441285809
+- cmd: http://pulp.mgmt.sccloudpoc.net/pulp/repos/sccloud-mgmt-infra-el7-dev/daemonize-1.7.3-1.el7.x86_64.rpm
+  when: 1441285815
