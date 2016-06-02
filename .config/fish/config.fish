@@ -1,39 +1,34 @@
-# Path to your oh-my-fish.
-set fish_path $HOME/.oh-my-fish
-
-# Theme
-#set fish_theme robbyrussell
-set fish_theme fishy-drupal
 
 # Supress initial greeting
 set fish_greeting ""
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-fish/plugins/*)
-# Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
-# Example format: set fish_plugins autojump bundler
-set fish_plugins brew bundler tmux vagrant long_running_notification
-
-# Path to your custom folder (default path is $FISH/custom)
-set fish_custom $HOME/.config/oh-my-fish
-
-# Load autojump configuration
-[ -f /usr/local/share/autojump/autojump.fish ]; and . /usr/local/share/autojump/autojump.fish
-
-# Load oh-my-fish configuration.
-. $fish_path/oh-my-fish.fish
-
-# Custom bindings
+# Custom bindings for OS X Terminal
 bind \033b prevd-or-backward-word
 bind \033f nextd-or-forward-word
 
 set -U fish_user_paths $HOME/bin $GOPATH/bin
 
-# http://direnv.net
-eval (direnv hook fish)
+# Some aliases
+alias hub git
+alias more less
+alias v vagrant
 
-eval (docker-machine env default 2>/dev/null)
-
-# https://github.com/joehillen/to-fish
+# Plugins
+fundle plugin 'tuvistavie/oh-my-fish-core'
 fundle plugin 'joehillen/to-fish'
+fundle plugin 'oh-my-fish/plugin-bang-bang'
+fundle plugin 'oh-my-fish/plugin-brew'
+fundle plugin 'oh-my-fish/plugin-bundler'
+fundle plugin 'zzamboni/long-running-notifications'
+fundle plugin 'tuvistavie/fish-fastdir'
+fundle plugin 'oh-my-fish/plugin-direnv'
+fundle plugin 'icyleaf/fish-pkg-docker'
+fundle plugin 'oh-my-fish/plugin-config'
+fundle plugin 'oh-my-fish/plugin-bak'
+fundle plugin 'oh-my-fish/plugin-ssh-config.d'
 
+# Theme
+fundle plugin 'zzamboni/theme-fishy-drupal'
+
+# Start them up
 fundle init

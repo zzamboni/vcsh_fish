@@ -1,1 +1,1 @@
-/Users/a10022/Personal/devel/fish-shell/share/completions/vagrant.fish
+/usr/local/Cellar/fish/2.3.0/share/fish/completions/vagrant.fish
