@@ -2,6 +2,7 @@
 # Do NOT edit it directly, your changes will be overwritten.
 SET_EXPORT ATLAS_TOKEN:cikhq1eQkraFz\x2deEi_SA
 SET_EXPORT GOPATH:/Users/taazadi1/Personal/devel/go
+SET_EXPORT HOMEBREW_CASK_OPTS:\x2d\x2dcaskroom\x3d/opt/homebrew\x2dcask/Caskroom
 SET_EXPORT HOMEBREW_GITHUB_API_TOKEN:f8c8911faef12aabe316a62e090cd6bc927c57c5
 SET_EXPORT LESS:\x2dR\x20\x2di
 SET LONG_RUNNING_NOTIFICATION_TIME:10000

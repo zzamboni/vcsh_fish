@@ -9,7 +9,7 @@ bind \033f nextd-or-forward-word
 set -U fish_user_paths $HOME/bin $GOPATH/bin
 
 # Some aliases
-alias hub git
+alias git hub
 alias more less
 alias v vagrant
 
