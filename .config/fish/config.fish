@@ -1,10 +1,5 @@
-
 # Supress initial greeting
 set fish_greeting ""
-
-# Custom bindings for OS X Terminal
-bind \033b prevd-or-backward-word
-bind \033f nextd-or-forward-word
 
 set -U fish_user_paths $HOME/bin $GOPATH/bin
 
@@ -32,3 +27,8 @@ fundle plugin 'zzamboni/theme-fishy-drupal'
 
 # Start them up
 fundle init
+
+# Custom bindings for OS X Terminal
+bind \033b prevd-or-backward-word
+bind \033f nextd-or-forward-word
+
