@@ -1,0 +1,1 @@
+/Users/taazadi1/.local/share/omf/themes/chain/fish_prompt.fish

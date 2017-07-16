@@ -1,1 +1,0 @@
-/usr/local/Cellar/fish/2.3.0/share/fish/completions/brew.fish
