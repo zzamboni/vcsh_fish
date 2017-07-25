@@ -38,7 +38,7 @@ SET fish_pager_color_completion:\x1d
 SET fish_pager_color_description:B3A06D\x1eyellow
 SET fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SET fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SET_EXPORT fish_user_paths:/Users/taazadi1/bin\x1e/Users/taazadi1/Dropbox/Personal/devel/hammerspoon/spoon/bin
+SET_EXPORT fish_user_paths:/Users/taazadi1/bin\x1e/Users/taazadi1/Personal/devel/go/bin\x1e/Users/taazadi1/Dropbox/Personal/devel/hammerspoon/spoon/bin
 SET fisher_active_prompt:fishy\x2ddrupal
 SET fisher_dependency_count:fishy\x2ddrupal\x1ebrew\x1ebang\x2dbang
 SET_EXPORT http_proxy:http\x3a//proxy\x2ecorproot\x2enet\x3a8079
